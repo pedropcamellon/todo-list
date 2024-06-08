@@ -1,0 +1,9 @@
+<ul>
+    <% unless @tasks.nil? && @tasks.empty? %>
+        <% @tasks.each do |task| %>
+            <%= render task %>
+        <% end %>
+    <% else %>
+        <li>You have no tasks for this project.</li>
+    <% end %>
+</ul>

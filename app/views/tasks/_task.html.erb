@@ -1,0 +1,7 @@
+<li class="d-flex gap-2 mb-3">
+    <p>
+        <%= task.content %>
+    </p>
+    
+    <%= button_to "Delete", project_task_path(@project, task), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+</li>
